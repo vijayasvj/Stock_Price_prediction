@@ -14,10 +14,12 @@ from xgboost import XGBRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import ExtraTreesRegressor
 from sklearn.metrics import r2_score, mean_absolute_error
+from PIL import Image
 
-
+image = Image.open('Orgware_logo.jpg')
 
 st.title('Stock Price Predictions')
+st.sidebar.image(image)
 st.sidebar.info('Welcome to the Stock Price Prediction App. Choose your options below')
 
 def main():
