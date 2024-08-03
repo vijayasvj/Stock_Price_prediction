@@ -16,7 +16,7 @@ from sklearn.ensemble import ExtraTreesRegressor
 from sklearn.metrics import r2_score, mean_absolute_error
 from PIL import Image
 
-image = Image.open('Orgware_logo.jpg')
+image = Image.open('Logo (1).png')
 
 st.title('Stock Price Predictions')
 st.sidebar.image(image)
